@@ -12,7 +12,8 @@ const timeKm = $("#TimeKM");
 
 
 $(document).ready(function(){
-	average.click(function(){		
+	average.click(function(){	
+alert()	
 		$(this).toggleClass("selectedOption")
 		averagePanel.addClass("show");
 		if (equal.text() != "GO") {

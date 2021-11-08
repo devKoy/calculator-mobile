@@ -1,0 +1,127 @@
+.menu {
+	position: absolute;
+	right: 5%;
+	top: 2%;
+	z-index: 999999999999999999 !important;
+	padding: .5rem;
+}
+
+.main-menu {
+ position: absolute;
+	background: #202124;
+	border-radius: 20px;
+	width: 170px;
+	height: 100px;
+	padding: 17px;
+	right: 0%;
+	top: 0%;
+	opacity: 0;
+	z-index: 9999999999999 !important;
+	animation: animHide .3s linear;
+	animation-fill-mode: forwards;
+	box-shadow: 5px 10px #20212480;
+	display: none;
+}
+
+.menu-options ul {
+	list-style: none;
+	text-align: left;
+}
+
+
+ul li {
+	font-size: larger;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.show-menu {
+ display: flex;
+	animation: showOpt .3s linear;
+	animation-fill-mode: forwards;
+}
+
+.historyDiv {
+ position: absolute;
+ top: 0;
+	width: 100%;
+	height: 0%;
+	background: #2d3033;
+	z-index: 9999999 !important;
+	animation: hideHistory .5s linear;
+}
+
+.show-history {
+	height: 70%;
+	animation: showHistory .5s linear;
+}
+
+.bar{
+	animation: movePillHide .25s linear;
+	animation-fill-mode: forwards;
+}
+
+.showPill {
+	animation: movePillShow .25s linear;
+	animation-fill-mode: forwards;
+	animation-delay: .25s;
+}
+@keyframes showOpt {
+	from {
+	 opacity: 0;
+		right: 0%;
+	 top: 0%;
+	
+	}to{
+		right: 5%;
+	 top: 5%;
+	 opacity: 1;
+	 
+	}
+}
+
+@keyframes animHide {
+	from{
+		right: 5%;
+	 top: 5%;
+	 opacity: 1;
+	 
+	}to{
+	 opacity: 0;
+		right: 0%;
+	 top: 0%;
+	 
+	}
+}
+
+@keyframes showHistory {
+	from{
+		height: 0%;
+	}to{
+		height: 70%;
+	}
+}
+
+@keyframes hideHistory {
+	from{
+		height: 70%;
+	}to{
+		height: 0%;
+	}
+}
+
+@keyframes movePillShow {
+	from{
+		top: 37%;
+	}to{
+		top: 65%;
+	}
+}
+
+@keyframes movePillHide {
+	from{
+		top: 65%;
+	}to{
+		top: 37%;
+	}
+}

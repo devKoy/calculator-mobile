@@ -1,0 +1,98 @@
+.history {
+	width: 90%;
+	height: 80%;
+	margin: 10% 5%;
+	display: inline-block;
+ float: right;
+ overflow-y: auto; 
+ overflow-x: hidden; 
+ white-space: nowrap;
+}
+
+.input,
+.result {
+	font-family: "Open Sans", sans-serif;
+	padding-bottom: 5%;
+	letter-spacing: 0.05em;
+	width: 100%;
+	background: rgba(0,0,0,0);
+	border: 0px;
+	display: flex;
+	text-align: right;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.result {
+ font-size: 48px;
+	color: #b7b7b7;
+	animation: resultsUF .3s linear;
+	animation-fill-mode: forwards;
+}
+
+.input {
+ min-height: 150px;
+	font-size: 64px;
+	color: #fff;
+	padding-top: 20px;
+	font-weight: 800;
+	animation: inputF .3s linear;
+	animation-fill-mode: forwards;
+}
+
+.inputUnFocus {
+	animation: inputUF .3s linear;
+	animation-fill-mode: forwards;
+}
+
+.resultFocus {
+	animation: resultsF .3s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes inputUF {
+	from {
+		font-weight: 800;
+		font-size: 64px;
+	 color: #fff;
+	}to {
+		font-weight: 600;
+		font-size: 48px;
+	 color: #b7b7b7;
+	}
+}
+
+@keyframes inputF {
+	from {
+		font-weight: 600;
+		font-size: 48px;
+	 color: #b7b7b7;
+	}to {
+		font-weight: 800;
+				
+	}
+}
+
+@keyframes resultsUF {
+	from {
+		font-weight: 800;
+		font-size: 64px;
+	 color: #fff;
+	}to {
+		font-weight: 600;
+		font-size: 48px;
+	 color: #b7b7b7;
+	}
+}
+
+@keyframes resultsF {
+	from {
+		font-weight: 600;
+		font-size: 48px;
+	 color: #b7b7b7;
+	}to {
+		font-weight: 800;
+		font-size: 64px;
+	 color: #fff;
+	}
+}

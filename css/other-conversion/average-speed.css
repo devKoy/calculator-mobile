@@ -1,0 +1,86 @@
+.average-speed {
+ position: absolute;
+	width: 100%;
+	background: #2d3033;
+	z-index: 9999999999999999;
+}
+
+.innerDiv {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#distance {
+ position: absolute;
+	font-weight: 900;
+	background: #2d3033;
+	color: #fff;
+	border: 0px;
+	border-bottom: 1px solid lightblue;
+	width: 30%;
+	height: 1.5rem;
+	font-size: 1rem;
+	bottom: 60%;
+	margin-left: 5%;
+}
+
+#time {
+	position: absolute;
+	font-weight: 900;
+	background: #2d3033;
+	color: #fff;
+	border: 0px;
+	border-bottom: 1px solid lightblue;
+	width: 30%;
+	height: 1.5rem;
+	font-size: 1rem;
+	bottom: 45%;
+	margin-left: 5%;
+}
+
+.titleOps {
+	position: absolute;
+	font-weight: 900;
+	background: #2d3033;
+	color: #fff;
+	border: 0px;
+	border-bottom: 1px solid lightblue;
+	width: 50%;
+	height: 1.5rem;
+	font-size: 1rem;
+	bottom: 90%;
+	margin-left: 5%;
+}
+
+.res {
+	position: absolute;
+	font-weight: 900;
+	background: #2d3033;
+	color: #fff;
+	border: 0px;
+	border-bottom: 1px solid lightblue;
+	width: 35%;
+	height: 1.5rem;
+	font-size: .6rem;
+}
+
+#dist {
+	bottom: 60%;
+	margin-left: 50%;
+}
+
+#hour {
+	bottom: 45%;
+	margin-left: 50%;
+}
+
+#Aver {
+	bottom: 30%;
+	margin-left: 50%;
+}
+
+#TimeKM {
+	bottom: 15%;
+	margin-left: 50%;
+}

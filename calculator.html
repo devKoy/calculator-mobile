@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page title</title>
+	<link rel="stylesheet" href="css/menu.css"></link>
+	<link rel="stylesheet" href="css/calculator.css"></link>
+	<link rel="stylesheet" href="css/equals.css"></link>
+	<link rel="stylesheet" href="css/moreOperation.css"></link>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	
+	<!-- hidden operations css -->
+	<link rel="stylesheet" href="css/other-conversion/average-speed.css"></link>
+</head>
+<body class="preload">
+<div class="calculator">
+	<div class="top">
+		<div class="historyDiv">
+			<div class="history">	
+			</div>
+		</div>
+			<!-- Operationssssss -->
+			<div class="hidden-operations">
+				<div class="average-speed">
+					<span class="fas fa-chevron-up closeNow"></span>
+					<!-- start -->
+					<div class="innerDiv">
+						<!--  -->
+						<div class="titleOps"> AVERAGE SPEED</div>
+						<input id="distance" type="text" placeholder="Distance [km]" readonly>
+					<input id="time" type="text" placeholder="Time [h]" readonly>
+					
+					<input class="res" id="dist" type="text" readonly placeholder="DESTINATION">
+					<input class="res" id="hour" type="text" readonly placeholder="TIME">
+					<input class="res" id="Aver" type="text" readonly placeholder="AVERAGE SPEED">
+					<input class="res" id="TimeKM" type="text" readonly placeholder="TIME / KM">
+					</div>
+				</div>
+				<!-- bmi -->
+				<div class="average-speed">
+					<span class="fas fa-chevron-up closeNow"></span>
+					<!-- start -->
+					<div class="innerDiv">
+						<!--  -->
+						<div class="titleOps"> AVERAGE SPEED</div>
+						<input id="distance" type="text" placeholder="Distance [km]" readonly>
+					<input id="time" type="text" placeholder="Time [h]" readonly>
+					
+					<input class="res" id="dist" type="text" readonly placeholder="DESTINATION">
+					<input class="res" id="hour" type="text" readonly placeholder="TIME">
+					<input class="res" id="Aver" type="text" readonly placeholder="AVERAGE SPEED">
+					<input class="res" id="TimeKM" type="text" readonly placeholder="TIME / KM">
+					</div>
+				</div>
+			</div>
+		<div class="bar"> 	</div>
+		<div class="nav-bar">
+			<i class="fas fa-ellipsis-v menu"></i>
+		</div>
+		<div class="calculate-area">
+			<div class="main-menu">
+				<div class="menu-options">
+					<ul>
+						<li id="historyList">History</li>
+						<li id="about">About</li>
+					</ul>
+				</div>
+			</div>
+			<div class="inputDiv">
+				<div class="blinking">
+				</div>
+				<input type="text" name="" id="input" class="input">
+			</div>	
+			<input type="text" name="" id="" class="result">
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="numpad">
+			<button class="numpad-button numeric">7</button>
+			<button class="numpad-button numeric">8</button>
+			<button class="numpad-button numeric">9</button>
+			<button class="numpad-button numeric">4</button>
+			<button class="numpad-button numeric">5</button>
+			<button class="numpad-button numeric">6</button>
+			<button class="numpad-button numeric">1</button>
+			<button class="numpad-button numeric">2</button>
+			<button class="numpad-button numeric">3</button>
+			<button class="numpad-button numeric">0</button>
+			<button class="numpad-button dot">.</button>
+			<button class="numpad-button equals">=</button>
+		</div>
+		<div class="operators">
+			<div class="circle"></div>
+			<button id="clear" class="backspace">
+				<i class="fas fa-backspace"></i>
+			</button>
+			<button class="divide basicOp">
+				<i class="fas fa-divide"></i>
+			</button>
+			<button class="multiply">
+				<i class="fas fa-times"></i>
+			</button>
+			<button class="subtract">
+				<i class="fas fa-minus"></i>
+			</button>
+			<button class="add" disabled>
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+		<div class="blue-strip">
+			<div class="leftDiv">
+				<i class="fas fa-chevron-left other-operator"></i>				
+			</div>		
+			<div class="title"> <span>CALCS/CONVERSION</span></div>
+		<div class="grid">
+			<!-- 1st row -->			
+<button class="moreOperation AS">Average Speed</button>
+			<button class="moreOperation">BMI</button>
+			<button class="moreOperation">Current Ratio</button>
+			<!-- 2nd row -->
+			<button class="moreOperation">Density</button>
+			<button class="moreOperation">Electric Charge</button>
+			<button class="moreOperation small">Fluctuation Rate</button>
+			<!-- 3rd row -->
+			<button class="moreOperation">Gratuity</button>
+			<button class="moreOperation">Gravity Pressure</button>
+			<button class="moreOperation small">Illuminance</button>
+			<button class="moreOperation small">Inventory Intensity</button>
+			<button class="moreOperation small">Level of Employment</button>
+			<button class="moreOperation">Market Growth</button>
+			<button class="moreOperation small">Percentage Rate</button>
+			<button class="moreOperation">RAM</button>
+			<button class="moreOperation">Yield</button>
+		</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.inputfit.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/other-conversion/average-speed.js"></script>
+</body>
+</html>
